@@ -35,3 +35,8 @@ GPT에게 물어봤는데 답변은 그렇다고 한다.
 공부하면서 정리하거나 궁금한 내용을 issue에 정리해서 올릴 것이다.
 코드만 올리면 내가 강의를 보고 단순히 따라 쳐서 올린게 전부라고 생각한다.
 
+#### Udemy : Java 21 Virtual Threads and Structured Concurrency
+사유 : virtual thread 를 활용한 Thread 성능 향상 공부
+##### 장점:
+이전에 수강한 강의보다 무언가 이유라던지, 배경이라던지 설명이 더 많고 속도도 초급자에게 딱 맞다. 
+

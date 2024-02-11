@@ -1,7 +1,9 @@
-package threadlocal;
+package thread_study.java21.src.main.java.threadlocal;
+
+import static java.lang.StringTemplate.STR;
 
 public class InheritableThreadLocalPlay {
-    public static final InheritableThreadLocal<User> user = new InheritableThreadLocal<>();
+    public static final InheritableThreadLocal<threadlocal.User> user = new InheritableThreadLocal<>();
 
     public static void main(String[] args) throws InterruptedException {
         print(STR."User => \{user.get()}");

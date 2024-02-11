@@ -1,36 +1,30 @@
 package thread_study.thread_10hours.src;
 
-import static java.lang.StringTemplate.STR;
-
-public class MemoryTest {
+public class IndependentSynchronization {
     public static int counter1 = 0;
     public static int counter2 = 0;
 
-    /**
-     * we have to make sure this method is executed only by a single thread
-     * at a given time
-     */
+    private static final Object lock1 = new Object();
+    private static final Object lock2 = new Object();
 
     /**
-     * because App object has a single lock: this is why the methods
-     * can not be executed "at the same time"
-     * - time slicing algorithm
+     * Because we have instantiated two independent objects, we
+     * can use them as independent locks.
+     *
+     * The first thread is going to execute increment one,
+     * and it doesn't have to wait for the second thread
+     * finishing with the increment2 and vice versa.
      */
-//    private synchronized static void increment1() {
-//        counter1++;
-//    }
-
-    // usually it is not a good practice to use synchronized keyword
-    // we should define synchronized
     private static void increment1() {
         // class level locking
-        synchronized (MemoryTest.class) {
+        // at the same time != parallel - CPU time slicing
+        synchronized (lock1) {
             counter1++;
         }
     }
 
     private static synchronized void increment2() {
-        synchronized (MemoryTest.class) {
+        synchronized (lock2) {
             counter2++;
         }
     }

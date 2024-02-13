@@ -1,4 +1,4 @@
-package thread_study.thread_10hours.src;
+package src;
 
 class Process {
     public void consume() throws InterruptedException {

@@ -1,4 +1,6 @@
-package thread_study.thread_10hours.src;
+package src;
+
+import static java.lang.StringTemplate.STR;
 
 public class IndependentSynchronization {
     public static int counter1 = 0;

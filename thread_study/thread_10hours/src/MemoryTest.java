@@ -1,4 +1,4 @@
-package thread_study.thread_10hours.src;
+package src;
 
 import static java.lang.StringTemplate.STR;
 

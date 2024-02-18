@@ -42,5 +42,7 @@ public class CollectionSynchronization {
 
         System.out.println(nums.size());
 
+
+
     }
 }

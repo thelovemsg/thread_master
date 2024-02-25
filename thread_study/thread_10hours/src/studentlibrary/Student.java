@@ -1,4 +1,4 @@
-package src.collection.studentlibrary;
+package src.studentlibrary;
 
 import java.util.Random;
 
